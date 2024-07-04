@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
+rtl                      : false # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "미소의 개발 공부 블로그"
 title_separator          : "|"
 subtitle                 : "consistency" # site tagline that appears below site title in masthead
@@ -205,7 +205,7 @@ highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-theme: minimal-mistakes-jekyll
+
 
 
 # Markdown Processing
@@ -291,16 +291,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
@@ -321,7 +321,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true 
+      comments:  #true 
       share: true
       related: true
       show_date: true
