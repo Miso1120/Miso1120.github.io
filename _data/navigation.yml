@@ -3,8 +3,8 @@ main:
   - title: "Category"
     url: /categories/
     children:
-      - title: "Jekyll"
-        url: /categories/jekyll/
+      - title: "CSS"
+        url: /categories/CSS/
       - title: "Blogging"
         url: /categories/blogging/
   - title: "Tag"
