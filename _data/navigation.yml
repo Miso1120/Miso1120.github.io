@@ -2,11 +2,6 @@
 main:
   - title: "Category"
     url: /categories/
-    children:
-      - title: "CSS"
-        url: /categories/CSS/
-      - title: "Blogging"
-        url: /categories/blogging/
   - title: "Tag"
     url: /tags/    
   # - title: "About"
