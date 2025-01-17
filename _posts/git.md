@@ -1,0 +1,52 @@
+1. git init
+    - Local에 Repository를 만든다. -> 폴더에 .git이 생긴다
+2. 작업 -> Working Directory에 저장된다.
+    - 생성, 수정, 삭제
+3. Working Directory의 내용 중 일부를 선택적으로 Staging area로 보낸다.
+    - git add<file name>/.
+4. Staging area -> Repository에 반영한다.
+    - git commit -m "메세지"
+5. Working Directory의 상태를 보기 위해서
+    - git status
+6. Commit 이력을 보기 위한 명령어
+    - git log
+    - git log --oneline
+---
+#### 직전 Commit 수정하기기
+```
+git commit --amend
+```
+- 직전 commit 메시지를 수정할 수 있다.
+- 다 쓰고 나면 esc + :wq 로 빠져나올 수 있다.
+
+```
+ touch b-funtion.txt
+ git add .
+ ```
+- 실수로 b-function.txt를 빼고 커밋해버린 상황
+
+---
+### 로컬과 GitHub 연동하기
+```
+git remote add origin url
+```
+- origin : 추가하는 원격 저장소 별칭
+- url : 추가하고자 하는 원격 저장소 주소
+
+## Branch란
+- 여러 사람이 협업하기 편하게 쓰고자 하는 '줄기' 라고 생각
+---
+## Push & Pull
+```
+git push origin master
+```
+- 원격 저장소로 보냄
+```
+git clone url
+```
+- 원격 저장소 내용을 복제함
+    - 이후 git add, git commit -> git push로 원격 저장소에 변경사항 저장
+```
+git pull origin master
+```
+- pull을 통해 로컬에 있는 변경사항을 원격 저장소의 변경 사항을 가져옴옴
